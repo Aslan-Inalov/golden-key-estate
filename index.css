@@ -162,14 +162,15 @@ html {
     }
 
     .header__title {
-        margin-left: 3px;
+        margin-left: 5px;
         font-size: 18px;
         line-height: 36px;
     }
 
     .burger-btn {
-        height: 36px;
-        width: 36px;
+        height: 34px;
+        width: 34px;
+        margin-right: 5px;
     }
 }
 
@@ -297,6 +298,11 @@ html {
 }
 
 /* BURGER-MENU */
+
+.burger-menu-scroll {
+    overflow: hidden;
+}
+
 
 .burger-container {
     position: fixed;
