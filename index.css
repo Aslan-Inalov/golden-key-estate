@@ -31,7 +31,7 @@ html {
     position: fixed;
     top: 0;
     left: 50%;
-    transform: translateX(-50%);  
+    transform: translateX(-50%);
     width: 100%;
     opacity: .93;
     z-index: 1;
@@ -148,11 +148,10 @@ html {
 @media (max-width: 940px) {
     .header {
         min-height: 60px;
-        margin: 18px 30px 0;
     }
 
     .header__title {
-        margin-left: 0;
+        margin-left: 10px;
     }
 
     .header__menu {
@@ -161,6 +160,7 @@ html {
 
     .burger-btn {
         display: block;
+        margin-right: 10px;
     }
 }
 

@@ -10,7 +10,7 @@ closeButton.addEventListener('click', function () {
     menu.classList.remove('burger-container_opened');
 });
 
-const body = document.querySelector('body');
+const body = document.querySelector('root');
 menu.addEventListener('scroll', function () {
     if (menu.scrollTop === 0) {
         body.classList.remove('burger-menu-scroll');
