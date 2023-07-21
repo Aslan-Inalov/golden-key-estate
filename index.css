@@ -28,7 +28,14 @@ html {
 /* HEADER */
 
 .header {
-    max-width: 1184px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);  
+    width: 100%;
+    opacity: .93;
+    z-index: 100;
+    max-width: 1280px;
     min-height: 70px;
     display: flex;
     justify-content: space-between;
@@ -36,6 +43,7 @@ html {
     margin: 0 auto;
     background: #F5F5F5;
     color: #1F1F33;
+    text-align: center;
 }
 
 .header__title {
