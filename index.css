@@ -7,7 +7,6 @@ html {
 
 .root {
     background: #F5F5F5;
-    overflow: hidden;
 }
 
 .page {
@@ -308,11 +307,6 @@ html {
 
 /* BURGER-MENU */
 
-.burger-menu-scroll {
-    overflow: hidden;
-}
-
-
 .burger-container {
     position: fixed;
     bottom: 0;
@@ -320,14 +314,13 @@ html {
     height: 100%;
     width: 100%;
     background-color: #fff;
-    transform: translateY(-100%);
+    transform: translateY(-120%);
     transition: transform 0.4s ease-in-out;
     z-index: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .burger-container_opened {
