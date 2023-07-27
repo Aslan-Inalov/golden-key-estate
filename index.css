@@ -281,7 +281,7 @@ html {
 @media (max-width: 940px) {
     .advantage__title {
         text-align: center;
-        max-width: 450px;
+        max-width: 620px;
         margin: 0;
         padding-top: 0;
         font-size: 36px;
@@ -366,8 +366,8 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin: 140px auto 0;
+    justify-content: space-between;
+    margin: 38px auto;
 }
 
 .burger-menu__list {
@@ -944,7 +944,7 @@ html {
 
     .firma__title {
         padding-top: 60px;
-        font-size: 36px;
+        font-size: 35px;
         line-height: 40px;
         letter-spacing: 0;
     }
@@ -1018,7 +1018,7 @@ html {
     font-size: 22px;
     font-weight: 400;
     color: blue;
-    margin: 20px 0;
+    margin: 20px 0 10px;
 }
 
 .footer__ask {
@@ -1057,7 +1057,7 @@ html {
     display: flex;
     padding: 0;
     gap: 10px;
-    padding-top: 20px;
+    padding-top: 15px;
     padding-bottom: 40px;
     margin: 0;
 }
