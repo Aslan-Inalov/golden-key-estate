@@ -736,8 +736,6 @@ html {
 .obj__discription {
     display: flex;
     flex-direction: column;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    border-top: none;
     border-radius: 0 0 5px 5px;
     padding: 20px 10px;
     background-color: #ffffff;
