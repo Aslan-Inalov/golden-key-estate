@@ -554,6 +554,14 @@ html {
     }
 }
 
+@media (max-width: 360px) {
+    .preview__description {
+        font-size: 23px;
+        line-height: 30px;
+        margin-top: 110px;
+    }
+}
+
 /* ROOMTUR */
 
 .tur {
