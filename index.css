@@ -973,6 +973,18 @@ html {
     }
 }
 
+@media (max-width: 371px) {
+    .firma__title {
+        font-size: 33px;
+    }
+}
+
+@media (max-width: 350px) {
+    .firma__title {
+        font-size: 30px;
+    }
+}
+
 /* FOOTER */
 
 .footer {
