@@ -557,16 +557,12 @@ html {
 @media (max-width: 370px) {
     .preview__description {
         font-size: 23px;
-        line-height: 30px;
-        margin-top: 110px;
     }
 }
 
 @media (max-width: 356px) {
     .preview__description {
         font-size: 20px;
-        line-height: 30px;
-        margin-top: 110px;
     }
 }
 
@@ -847,6 +843,19 @@ html {
 
     .more-button {
         margin-top: 50px;
+    }
+}
+
+
+@media (max-width: 371px) {
+    .obj__title {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 356px) {
+    .obj__title {
+        font-size: 31px;
     }
 }
 
