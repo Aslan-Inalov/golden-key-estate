@@ -554,9 +554,17 @@ html {
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 370px) {
     .preview__description {
         font-size: 23px;
+        line-height: 30px;
+        margin-top: 110px;
+    }
+}
+
+@media (max-width: 356px) {
+    .preview__description {
+        font-size: 20px;
         line-height: 30px;
         margin-top: 110px;
     }
