@@ -1,6 +1,7 @@
 const burgerButton = document.querySelector('.burger-btn');
 const headerButton = document.querySelector('.header__button');
 const previewButton = document.querySelector('.preview__button');
+const advantageButton = document.querySelector('.advantage-button');
 const catalogButton = document.querySelector('.more-button');
 const menu = document.querySelector('.burger-container');
 const consultation = document.querySelector('.popup__consultation');
@@ -21,6 +22,10 @@ headerButton.addEventListener('click', function () {
     body.style.overflow = 'hidden';
 });
 previewButton.addEventListener('click', function () {
+    consultation.classList.add('popup_opened');
+    body.style.overflow = 'hidden';
+});
+advantageButton.addEventListener('click', function () {
     consultation.classList.add('popup_opened');
     body.style.overflow = 'hidden';
 });
