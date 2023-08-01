@@ -329,6 +329,7 @@ html {
 
 .burger-container_opened {
     transform: translateX(0);
+    overflow: auto;
 }
 
 .burger-container__header {
@@ -1271,7 +1272,7 @@ html {
 
 @media (max-width: 920px) {
     .popup_opened {
-        padding-top: 150px;
+        padding-top: 180px;
         overflow: auto;
     }
 }
