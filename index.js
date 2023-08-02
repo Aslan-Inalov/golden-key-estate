@@ -6,41 +6,61 @@ const catalogButton = document.querySelector('.more-button');
 const menu = document.querySelector('.burger-container');
 const consultation = document.querySelector('.popup__consultation');
 const catalog = document.querySelector('.popup__catalog');
+const more = document.querySelector('.popup__more');
 const closeBurger = document.querySelector('.burger-container__close-btn');
 const popupCloseElem = document.querySelectorAll('.popup__close-button');
+const moreButton = document.querySelectorAll('.more');
 const body = document.querySelector('body');
+
 function closePopup(popup) {
     popup.classList.remove('popup_opened');
     body.style.overflow = 'auto';
 }
+
 burgerButton.addEventListener('click', function () {
     menu.classList.add('burger-container_opened');
     body.style.overflow = 'hidden';
 });
+
 headerButton.addEventListener('click', function () {
     consultation.classList.add('popup_opened');
     body.style.overflow = 'hidden';
 });
+
 previewButton.addEventListener('click', function () {
     consultation.classList.add('popup_opened');
     body.style.overflow = 'hidden';
 });
+
 advantageButton.addEventListener('click', function () {
     consultation.classList.add('popup_opened');
     body.style.overflow = 'hidden';
 });
+
 catalogButton.addEventListener('click', function () {
     catalog.classList.add('popup_opened');
     body.style.overflow = 'hidden';
 });
+
+moreButton.forEach(button => {
+    button.addEventListener('click', () => {
+        more.classList.add('popup_opened');
+        body.style.overflow = 'hidden';
+    });
+});
+
+
+
 closeBurger.addEventListener('click', function () {
     menu.classList.remove('burger-container_opened');
     body.style.overflow = 'auto';
 });
+
 popupCloseElem.forEach((button) => {
     const popup = button.closest('.popup');
     button.addEventListener('click', () => closePopup(popup));
 });
+
 function handlePopupClose(event) {
     const currentOpenedPopup = document.querySelector('.popup_opened');
     if (event.type === 'keydown' && event.key === 'Escape' && currentOpenedPopup) {
@@ -49,8 +69,10 @@ function handlePopupClose(event) {
         closePopup(currentOpenedPopup);
     }
 }
+
 document.addEventListener('keydown', handlePopupClose);
 document.addEventListener('click', handlePopupClose);
+
 const menuLinks = document.querySelectorAll('.burger-menu__link');
 menuLinks.forEach(function (link) {
     link.addEventListener('click', function () {
