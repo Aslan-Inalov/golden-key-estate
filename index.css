@@ -1483,7 +1483,7 @@ iframe {
         flex-direction: column;
         max-width: 430px;
         max-height: 1150px;
-        margin-top: 260px;
+        margin-top: 200px;
     }
     
     .popup__container-media {
@@ -1511,10 +1511,6 @@ iframe {
 }
 
 @media (max-width: 450px) {
-    .popup__more {
-        padding-top: 400px;
-    }
-    
     .popup__container-more {
         max-width: 320px;
         padding: 30px 10px;
