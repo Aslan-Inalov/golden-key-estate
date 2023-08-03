@@ -161,6 +161,17 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 })
 
+document.getElementById("video-thumbnail").addEventListener("click", function() {
+    // Создайте элемент iframe для вставки видео
+    var videoFrame = document.createElement("iframe");
+    videoFrame.src = "https://www.youtube.com/embed/qq2FVXf_rmY";
+    videoFrame.width = "100%";
+    videoFrame.height = "90%";
+    // videoFrame.frameborder = "none";
+    videoFrame.allowfullscreen = true;
+    // Замените изображение на iframe с видео
+    document.getElementById("video-thumbnail").replaceWith(videoFrame);
+});
 
 
 
