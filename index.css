@@ -5,6 +5,12 @@ html {
     scroll-behavior: smooth;
 }
 
+iframe {
+    border: none;
+    border-radius: 5px;
+  }
+  
+
 .root {
     background: #F5F5F0;
 }
@@ -1425,15 +1431,29 @@ html {
     height: 259px;
     overflow: hidden;
     border: none;
+    position: relative;
 }
 
 .more__frame{
     width: 100%;
     height: 90%;
-    object-fit: contain;
     border-radius: 5px;
 }
 
+.video__btn {
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+  
 .popup__more-title {
     margin: 0;
     font-size: 24px;
@@ -1451,16 +1471,6 @@ html {
     .popup__close-button_about {
         top: -47px;
         right: 0;
-    }
-}
-
-@media (max-height: 650px) {
-    .popup__more {
-        padding-top: 350px;
-    }
-
-    .popup__container-more {
-        margin-top: 260px;
     }
 }
 
@@ -1488,16 +1498,21 @@ html {
     .img-container {
         width: 390px;
     }
+}
 
-    .video {
-        width: 390px;
-        height: 300px;
+@media (max-height: 650px) {
+    .popup__more {
+        padding-top: 350px;
+    }
+
+    .popup__container-more {
+        margin-top: 580px;
     }
 }
 
 @media (max-width: 450px) {
     .popup__more {
-        padding-top: 350px;
+        padding-top: 400px;
     }
     
     .popup__container-more {
@@ -1510,10 +1525,6 @@ html {
     }
     
     .img-container {
-        width: 100%;
-    }
-
-    .video {
         width: 100%;
     }
 }

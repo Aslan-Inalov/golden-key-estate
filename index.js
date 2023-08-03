@@ -169,10 +169,8 @@ document.getElementById("video-thumbnail").addEventListener("click", function() 
     videoFrame.height = "90%";
     // videoFrame.frameborder = "none";
     videoFrame.allowfullscreen = true;
-    // Замените изображение на iframe с видео
-    document.getElementById("video-thumbnail").replaceWith(videoFrame);
+    // Замените изображение и кнопку на iframe с видео
+    var videoContainer = document.getElementsByClassName("video")[0];
+    videoContainer.innerHTML = "";
+    videoContainer.appendChild(videoFrame);
 });
-
-
-
-
