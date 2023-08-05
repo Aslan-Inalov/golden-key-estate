@@ -1061,6 +1061,13 @@ iframe {
     margin: 20px 0 10px;
 }
 
+.footer__contacts-title {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 36px;
+    margin: 0;
+}
+
 .footer__ask {
     display: flex;
     flex-direction: column;
@@ -1200,7 +1207,21 @@ iframe {
     padding-left: 40px;
     /* сохраняем паддинг справа */
     width: 88%;
+}
 
+.popup__textarea {
+    all: unset;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    padding: 15px 15px 0;
+    margin: 0;
+    /* сохраняем паддинг справа */
+    width: 90%;
+    height: 70px;
 }
 
 .popup__input-container {
@@ -1403,11 +1424,17 @@ iframe {
 }
 
 .visible {
+    display: block;
     border-style: none;
     width: 100%;
     height: 90%;
     border-radius: 5px;
 }
+
+.hidden {
+    display: none;
+  }
+  
 
 .about {
     margin-top: 15px;
@@ -1466,6 +1493,31 @@ iframe {
     font-size: 28px;
     color: #A52A2A;
 }
+
+.wrapper {
+    position: relative;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+}
+
+.navigation button {
+    background: none; /* убираем фон кнопок */
+    border: none; /* убираем границы кнопок */
+    width: 30px; /* задаем ширину кнопок */
+    height: auto; /* автоматически подстраиваем высоту кнопок */
+  }
+  .navigation img {
+    width: 100%; /* задаем ширину 100% от кнопки */
+    height: auto; /* автоматически подстраиваем высоту изображения */
+  }
 
 @media (max-width: 850px) {
     .popup__close-button_about {

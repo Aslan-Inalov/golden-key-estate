@@ -216,7 +216,7 @@
                     <p class="footer__copyright-text">&copy; GOLDEN KEY ESTATE, 2023</p>
                 </div>
                 <div class="footer__contacts">
-                    <h2>НАШИ КОНТАКТЫ</h2>
+                    <h2 class="footer__contacts-title">Наши контакты</h2>
                     <p class="footer__contacts-nbr">+90 552 221 16 88</p>
                     <div class="footer__icon">
                         <ul class="footer__list">
@@ -359,18 +359,65 @@
             </div>
         </div>
 
+        <div class="popup popup__ask popup_hidden">
+            <div class="popup__container">
+                <div class="popup__discription">
+                    <h2 class="popup__title">Задать вопрос</h2>
+                    <p class="popup__subtitle">Оставьте свои контакты и мы ответим на ваш вопрос <nobr>в ближайшее
+                            время</nobr>
+                    </p>
+                </div>
+                <form class="popup__form" name="form" novalidate>
+                    <div class="popup__input-container">
+                        <input type="text" name="name" placeholder="Имя" class="popup__input" id="profile-name-input"
+                            minlength="2" maxlength="40" required>
+                        <span class="popup__input-icon popup__input-icon_user_name"></span>
+                    </div>
+                    <span class="popup__input-error profile-name-input-error"></span>
+
+                    <div class="popup__input-container">
+                        <input type="tel" data-tel-input placeholder="Телефон" class="popup__input" maxlength="18" />
+                        <span class="popup__input-icon popup__input-icon_tel"></span>
+                    </div>
+                    <span class="popup__input-error profile-tel-input-error"></span>
+
+                    <div class="popup__input-container">
+                        <input type="email" name="email" placeholder="E-mail" class="popup__input" minlength="2"
+                            maxlength="200" required>
+                        <span class="popup__input-icon popup__input-icon_email"></span>
+                    </div>
+                    <span class="popup__input-error profile-about-input-error"></span>
+
+
+                    <div class="popup__input-container">
+                        <textarea name="ask" placeholder="Ваш вопрос" class="popup__textarea" minlength="2"
+                            maxlength="200" required></textarea>
+                        <span class="popup__input-icon popup__input-icon_ask"></span>
+                    </div>
+                    <span class="popup__input-error profile-ask-input-error"></span>
+                    <button type="submit" class="popup__button">Отправить</button>
+                </form>
+
+                <button type="button" class="popup__close-button opacity" aria-label="Закрыть попап"></button>
+            </div>
+        </div>
+
         <div class="popup popup__more">
             <div class="popup__container popup__container-more">
                 <div class="popup__container-media">
                     <div class="wrapper">
                         <div class="img-container">
                             <img src="https://static.tildacdn.com/tild6362-3439-4465-b732-333939306132/Copy_of_B-20.jpg"
-                                alt="jellyfish" class="visible" id="img-1">
-                            <!-- <img src="https://static.tildacdn.com/tild6638-6438-4239-b766-653163663637/__2023-01-11__092945.png" alt="jellyfish" class="hidden" id="img-2">
+                                alt="jellyfish" class="hidden" id="img-4">
+                            <img src="https://static.tildacdn.com/tild6638-6438-4239-b766-653163663637/__2023-01-11__092945.png" alt="jellyfish" class="hidden" id="img-2">
                     <img src="https://static.tildacdn.com/tild3538-6338-4562-b130-306564383534/__2023-01-11__092927.png" alt="jellyfish" class="hidden" id="img-3">
-                    <img src="https://static.tildacdn.com/tild3162-3836-4661-b137-343735633735/__2023-01-11__003412.png" alt="jellyfish" class="hidden" id="img-4">
-                    <img src="https://static.tildacdn.com/tild6165-3632-4237-b564-323433343837/__2023-01-11__003347.png" alt="jellyfish" class="hidden" id="img-5"> -->
+                    <img src="https://static.tildacdn.com/tild3162-3836-4661-b137-343735633735/__2023-01-11__003412.png" alt="jellyfish" class="visible" id="img-1">
+                    <img src="https://static.tildacdn.com/tild6165-3632-4237-b564-323433343837/__2023-01-11__003347.png" alt="jellyfish" class="hidden" id="img-5">
                         </div>
+                        <div class="navigation">
+                            <button class="prev" onclick="showPrev()"><img class="prev-icon" src="./images/free-icon-left-arrow-line-symbol-54321.png" alt=""></button>
+                            <button class="next" onclick="showNext()"><img class="next-icon" src="./images/free-icon-right-arrow-angle-54833.png" alt=""></button>
+                          </div>                        
                     </div>
                     <div class="video">
                         <picture>

@@ -3,9 +3,11 @@ const headerButton = document.querySelector('.header__button');
 const previewButton = document.querySelector('.preview__button');
 const advantageButton = document.querySelector('.advantage-button');
 const catalogButton = document.querySelector('.more-button');
+const askButton = document.querySelector('.footer__ask-btn');
 const menu = document.querySelector('.burger-container');
 const consultation = document.querySelector('.popup__consultation');
 const catalog = document.querySelector('.popup__catalog');
+const ask = document.querySelector('.popup__ask');
 const more = document.querySelector('.popup__more');
 const closeBurger = document.querySelector('.burger-container__close-btn');
 const popupCloseElem = document.querySelectorAll('.popup__close-button');
@@ -39,6 +41,11 @@ advantageButton.addEventListener('click', function () {
 
 catalogButton.addEventListener('click', function () {
     catalog.classList.add('popup_opened');
+    body.style.overflow = 'hidden';
+});
+
+askButton.addEventListener('click', function () {
+    ask.classList.add('popup_opened');
     body.style.overflow = 'hidden';
 });
 
@@ -174,3 +181,35 @@ document.getElementById("video-thumbnail").addEventListener("click", function() 
     videoContainer.innerHTML = "";
     videoContainer.appendChild(videoFrame);
 });
+
+
+var currentImage = 1; // текущее изображение
+var totalImages = 5; // общее количество изображений
+function showPrev() {
+  var prevImage = currentImage - 1;
+  if (prevImage < 1) {
+    prevImage = totalImages;
+  }
+  hideImage(currentImage);
+  showImage(prevImage);
+  currentImage = prevImage;
+}
+function showNext() {
+  var nextImage = currentImage + 1;
+  if (nextImage > totalImages) {
+    nextImage = 1;
+  }
+  hideImage(currentImage);
+  showImage(nextImage);
+  currentImage = nextImage;
+}
+function hideImage(imageNumber) {
+  var image = document.getElementById('img-' + imageNumber);
+  image.classList.remove('visible');
+  image.classList.add('hidden');
+}
+function showImage(imageNumber) {
+  var image = document.getElementById('img-' + imageNumber);
+  image.classList.remove('hidden');
+  image.classList.add('visible');
+}
