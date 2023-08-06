@@ -631,6 +631,7 @@ iframe {
     width: 450px;
     height: 300px;
     border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2), 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .tur-discription {
@@ -720,7 +721,7 @@ iframe {
     display: flex;
     flex-direction: column;
     border-radius: 5px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2), 0px 0px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2), 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .obj__card-img {
